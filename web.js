@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 #  response.send('Hello World 2!');
 #});
 
-fs.writeFile('index.html', 'utf8');
+fs.readFileSync('index.html', 'utf8');
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
